@@ -31,6 +31,17 @@ eb.style.visibility="hidden"
 }
 }
 
+/*
+function inject(x,y){
+return document.querySelector(x)+"."+y
+
+}
+*/
+function ele(x){
+return document.querySelector(x)
+}
+
+
 function eventOff(x){
 let e=document.querySelector(x)
 return e.style.pointerEvents="none"
@@ -232,12 +243,10 @@ e.style.zIndex =y.zIndex
 )
 }
 function createStyle(x,y){
-
-if(typeof(x)=="string"){
-let p;
 let e=document.querySelectorAll(x)
-for(i=0;i<e.length;i++){
+if(typeof(x)=="string"){
 
+for(i=0;i<e.length;i++){
 return (
 e[i].style.alignItems =y.alignItems,
 e[i].style.animation =y.animation ,
@@ -566,4 +575,4 @@ alignItems:"center"
 
 
 
-/End/
+/*End*/
