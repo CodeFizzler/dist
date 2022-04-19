@@ -40,7 +40,24 @@ return document.querySelector(x)+"."+y
 function ele(x){
 return document.querySelector(x)
 }
-
+function load(x,y) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+   document.querySelector(x).textContent=this.responseText
+  
+   }
+  xhttp.open("GET",y,true)
+ xhttp.send()
+ }
+function loadHTML(x,y) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+   document.querySelector(x).innerHTML=this.responseText
+  
+   }
+  xhttp.open("GET",y,true)
+ xhttp.send()
+ }
 
 function eventOff(x){
 let e=document.querySelector(x)
