@@ -30,4 +30,15 @@ more one is coming
 ## CDN 
 Copy this cdn link and implement in your code [https:cdn.jsdelivr.net/gh/sameervegas/dist@latest/toto.min.j](https:cdn.jsdelivr.net/gh/sameervegas/dist@latest/toto.min.js).
 
+## Demo
+### Creating Tag
+```javascript
+createTag({
+    create: "audio",
+    attribute: {
+        src: "https://www.fesliyanstudios.com/download-link.php?src=e&id=215",
+    },
+    append: "body",
+});
+```
 
