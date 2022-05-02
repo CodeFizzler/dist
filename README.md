@@ -28,7 +28,7 @@ TotoJS have some inbuilt functions and features thats really makes your code mor
 - putText()
 more one is coming
 ## CDN 
-Copy this cdn link and implement in your code [https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/toto.min.js](https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/toto.min.js).
+Copy this cdn link and implement in your code [https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/TotoJS.min.js](https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/TotoJS.min.js).
 
 ## Demo
 ### Creating Tag
@@ -96,7 +96,7 @@ so you get an idea how this can boost performance
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/sameervegas/TotoJS@76bd59113030a499ea6f6c599d7362ffc712763b/toto.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/TotoJS.min.js"></script>
 <title>TotoJs Example</title>
 </head>
 <body>
