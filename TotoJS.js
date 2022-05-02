@@ -244,8 +244,8 @@ function createTag(y) {
     (e.style.zIndex = y.zIndex)
   );
 }
-function createStyle(x,y) {
-  let e = document.querySelectorAll(x);
+function createStyle(y) {
+  let e = document.querySelectorAll(y.element);
   if (typeof x == "string") {
     for (i = 0; i < e.length; i++) {
       return (
