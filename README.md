@@ -90,12 +90,13 @@ putText(".ele","i am a div") //put text in your desire element
 ### Creating a simple audio player using TotoJS 
 so you get an idea how this can boost performance
 ```javascript
+//Created By Using TotoJS
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/TotoJS.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/TotoJS.js"></script>
 <title>TotoJs Example</title>
 </head>
 <body>
