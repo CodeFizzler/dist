@@ -37,8 +37,19 @@ createTag({
     create: "audio",
     attribute: {
         src: "https://www.fesliyanstudios.com/download-link.php?src=e&id=215",
+        class: "audio"
     },
     append: "body",
 });
 ```
+### Creating Style
+```javascript
+createTag({
+    create: "audio",
+    attribute: {
+        src: "https://www.fesliyanstudios.com/download-link.php?src=e&id=215",
+        class: "audio"
+    },
+    append: "body",
+});
 
