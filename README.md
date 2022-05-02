@@ -88,3 +88,106 @@ putHTML(".ele","i am a div") //put html in your desire element
 putValue(".ele","i am a div") //put value in your desire element
 putText(".ele","i am a div") //put text in your desire element
 ```
+### Creating a simple audio player using TotoJS 
+so you get an idea how this can boost performance
+```javascript
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/gh/sameervegas/TotoJS@76bd59113030a499ea6f6c599d7362ffc712763b/toto.min.js"></script>
+<title>TotoJs Example</title>
+</head>
+<body>
+<script>
+//TotoJS Is Case Sensitive
+//You Can Build More Optimized Code.
+createTag({
+    element: "audio",
+    attribute: {
+        src: "https://www.fesliyanstudios.com/download-link.php?src=e&id=215",
+    },
+    append: "body",
+});
+createTag({
+    element: "div",
+    attribute: { class: "ele" },
+    append: "body",
+});
+createTag({
+    element: "span",
+    attribute: { class: "eleA" },
+    append: "div",
+    text: "Play",
+});
+createTag({
+    element: "span",
+    attribute: { class: "eleB" },
+    append: "div",
+    text: "Pause",
+});
+createStyle({
+    element:".eleA",
+    font: "30px arial",
+    position: "fixed",
+});
+createStyle({
+    element:"body",
+    background: "#222222",
+});
+createStyle({
+    element:".eleB",
+    font: "30px arial",
+    position: "fixed",
+});
+createStyle({
+    element:"div",
+    width: "50px",
+    height: "50px",
+    background: "black",
+    borderRadius: "10px",
+    position: "fixed",
+    bottom: "100px",
+    color: "white",
+    left: "calc(50% - 30px)",
+    transform: "scale(3,3)",
+});
+hide(".eleB");
+putHTML(".eleA", '<i class="fa fa-play" aria-hidden="true"></i>');
+putHTML(".eleB", '<i class="fa fa-pause" aria-hidden="true"></i>');
+setEvent({
+    element: ".eleA",
+    event: "click",
+    do: () => {
+        toggle(".eleB", ".eleA");
+    },
+});
+setEvent({
+    element: ".eleB",
+    event: "click",
+    do: () => {
+        toggle(".eleB", ".eleA");
+    },
+});
+setEvent({
+    element: ".eleA",
+    event: "click",
+    do: () => {
+        ele("audio").play();
+    },
+});
+setEvent({
+    element: ".eleB",
+    event: "click",
+    do: () => {
+        ele("audio").pause();
+    },
+});
+
+center("span");
+
+</script>
+</body>
+</html>
+```
