@@ -177,31 +177,31 @@ center("span");
 </html>
 ```
 ### Pros
--Your code look so optimised and boost the productivity.
--You can do basic css and html in just few lines and easy to learn.
--Toggling between elements is so easy.
--You can align anything in center by using center().
--This can save you time and build more in just less time.
--The script is not bulky so the cdn loads in under microsecond.
--This is easy to learn and everything is just look perfect.
+- Your code look so optimised and boost the productivity.
+- You can do basic css and html in just few lines and easy to learn.
+- Toggling between elements is so easy.
+- You can align anything in center by using center().
+- This can save you time and build more in just less time.
+- The script is not bulky so the cdn loads in under microsecond.
+- This is easy to learn and everything is just look perfect.
 
 ### Cons
--You need internet connection to load the cdn.
--This is case-sensitive.
+- You need internet connection to load the cdn.
+- This is case-sensitive.
 
 ### Limitations 
 but we improving
--You can only apply stylesheet on a single element at once if you need to apply the stylesheet for other then you need to write it again.
--You can not implement variable in function you only need a string value like class|id|tag only.
--You can not bring whole stylesheet in variable.
--You can not create multiple elements and stylesheet at once.
--There is a limited function that can fulfill your requirement.
--You can not load link data in variable or can not just console the loaded value by using load().
--Stylesheet is limited you just do basic styling of element
+- You can only apply stylesheet on a single element at once if you need to apply the stylesheet for other then you need to write it again.
+- You can not implement variable in function you only need a string value like class|id|tag only.
+- You can not bring whole stylesheet in variable.
+- You can not create multiple elements and stylesheet at once.
+- There is a limited function that can fulfill your requirement.
+- You can not load link data in variable or can not just console the loaded value by using load().
+- Stylesheet is limited you just do basic styling of element
 
 ## Conclusion 
 You can use this script to save your time and build more in less time and in less line.You can easily create everything by using your skill and logic you can build almost everything and if you really want to increase productivity then you can implement this.
--We are working on new functions that can take decisions for you so cheers.
--Happy Programming.
+- We are working on new functions that can take decisions for you so cheers.
+- Happy Programming.
  
  ### Developed and managed by sameervegas.
