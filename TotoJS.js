@@ -78,11 +78,11 @@ function updateData(x, y) {
 function removeData(x) {
   return localStorage.removeItem(x);
 }
-function setEvent(x) {
-  return ele(x.element).addEventListener(x.event, x.do);
+function setEvent(y,x) {
+  return ele(y).addEventListener(x.event, x.run);
 }
-function createTag(y) {
-  let e = document.createElement(y.element);
+function createTag(x,y) {
+  let e = document.createElement(x);
   let o;
   for (i = 0; i < Object.keys(y.attribute).length; i++) {
     o = e.setAttribute(
