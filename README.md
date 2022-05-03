@@ -28,7 +28,7 @@ TotoJS have some inbuilt functions and features thats really makes your code mor
 - putText()
 more one is coming
 ## CDN 
-Copy this cdn link and implement in your code https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/TotoJS.js .
+Copy this cdn link and implement in your code https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/Toto.js .
 
 ## Demo
 ### Creating Tag
@@ -88,59 +88,51 @@ putText(".ele","i am a div") //put text in your desire element
 ### Creating a simple audio player using TotoJS 
 so you get an idea how this can boost performance
 ```javascript
-//Created By Using TotoJS
+<!--Created By Using TotoJS-->
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/TotoJS.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/Toto.js"></script>
 <title>TotoJs Example</title>
 </head>
 <body>
 <script>
 //TotoJS Is Case Sensitive
 //You Can Build More Optimized Code.
-createTag({
-    element: "audio",
+createTag("audio",{
     attribute: {
         src: "https://www.fesliyanstudios.com/download-link.php?src=e&id=215",
     },
     append: "body",
 });
-createTag({
-    element: "div",
+createTag("div",{
     attribute: { class: "ele" },
     append: "body",
 });
-createTag({
-    element: "span",
+createTag("span",{
     attribute: { class: "eleA" },
     append: "div",
     text: "Play",
 });
-createTag({
-    element: "span",
+createTag("span",{
     attribute: { class: "eleB" },
     append: "div",
     text: "Pause",
 });
-createStyle({
-    element:".eleA",
+createStyle(".eleA",{
     font: "30px arial",
     position: "fixed",
 });
-createStyle({
-    element:"body",
+createStyle("body",{
     background: "#222222",
 });
-createStyle({
-    element:".eleB",
+createStyle(".eleB",{
     font: "30px arial",
     position: "fixed",
 });
-createStyle({
-    element:"div",
+createStyle("div",{
     width: "50px",
     height: "50px",
     background: "black",
@@ -154,31 +146,27 @@ createStyle({
 hide(".eleB");
 putHTML(".eleA", '<i class="fa fa-play" aria-hidden="true"></i>');
 putHTML(".eleB", '<i class="fa fa-pause" aria-hidden="true"></i>');
-setEvent({
-    element: ".eleA",
+setEvent(".eleA",{
     event: "click",
-    do: () => {
+    run: () => {
         toggle(".eleB", ".eleA");
     },
 });
-setEvent({
-    element: ".eleB",
+setEvent(".eleB",{
     event: "click",
-    do: () => {
+    run: () => {
         toggle(".eleB", ".eleA");
     },
 });
-setEvent({
-    element: ".eleA",
+setEvent(".eleA",{
     event: "click",
-    do: () => {
+    run: () => {
         ele("audio").play();
     },
 });
-setEvent({
-    element: ".eleB",
+setEvent(".eleB",{
     event: "click",
-    do: () => {
+    run: () => {
         ele("audio").pause();
     },
 });
