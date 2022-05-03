@@ -150,24 +150,14 @@ setEvent(".eleA",{
     event: "click",
     run: () => {
         toggle(".eleB", ".eleA");
+         ele("audio").play();
     },
 });
 setEvent(".eleB",{
     event: "click",
     run: () => {
-        toggle(".eleB", ".eleA");
-    },
-});
-setEvent(".eleA",{
-    event: "click",
-    run: () => {
-        ele("audio").play();
-    },
-});
-setEvent(".eleB",{
-    event: "click",
-    run: () => {
-        ele("audio").pause();
+      ele("audio").pause();
+       toggle(".eleB", ".eleA");
     },
 });
 
