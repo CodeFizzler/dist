@@ -33,8 +33,7 @@ Copy this cdn link and implement in your code https://cdn.jsdelivr.net/gh/sameer
 ## Demo
 ### Creating Tag
 ```javascript
-createTag({
-    element: "div",
+createTag("div",{
     attribute: { class: "ele" , id: "ele"},
     append: "body",
 });
@@ -55,8 +54,7 @@ createStyle(".ele",{
 ```
 ### Creating Event
 ```javascript
-setEvent({
-    element: "div",
+setEvent("div",{
     event: "click",
     do: () => {
         alert("Hey You Just Created An Event")
