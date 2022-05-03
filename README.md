@@ -56,7 +56,7 @@ createStyle(".ele",{
 ```javascript
 setEvent("div",{
     event: "click",
-    do: () => {
+    run: () => {
         alert("Hey You Just Created An Event")
     },
 });
