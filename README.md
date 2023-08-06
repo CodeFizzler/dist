@@ -28,7 +28,7 @@ TotoJS have some inbuilt functions and features thats really makes your code mor
 - putText()
 more one is coming
 ## CDN 
-Copy this cdn link and implement in your code https://cdn.jsdelivr.net/gh/sameervegas/dist@latest/Toto.js .
+Copy this cdn link and implement in your code https://cdn.jsdelivr.net/gh/codefizzler/dist@latest/Toto.js .
 
 ## Demo
 ### Creating Tag
